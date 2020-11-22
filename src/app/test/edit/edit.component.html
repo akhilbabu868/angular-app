@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="col-sm-10" style="margin-top: 20px;">
+        <div class="card">
+            <h5 class="card-header">Master</h5>
+            <div class="card-body">
+                <h5 class="card-title">Student List</h5><hr>
+                <form  [formGroup]="editstudent" (ngSubmit)="updateStudentInfo()">
+
+                        <div class="form-group col-md-6">
+                            <input type="text"  class="form-control" name="FirstName" formControlName="firstname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" name="LastName"  formControlName="lastname" >
+                        </div>
+                     <div class="form-group col-md-10">
+                        <input type="text" class="form-control"    name="Email"   formControlName="email" >
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control"   name="Mobile"    formControlName ="mobile">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <button type="submit"  class="btn btn-success">Update</button>
+                    </div>
+                </form>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+
